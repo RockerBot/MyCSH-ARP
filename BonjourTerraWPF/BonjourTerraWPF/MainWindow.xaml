@@ -1,0 +1,52 @@
+﻿<Window x:Class="BonjourTerraWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BonjourTerraWPF"
+        mc:Ignorable="d"
+        Title="App Groups" Height="600" Width="600"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border Background="#AAFFFFFF"
+            CornerRadius="40">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100
+                                  "/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+                <RowDefinition Height="75"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="App Groups"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="LightBlue"
+                       FontSize="25"/>
+
+            <Button Grid.Column="3"
+                    Grid.Row="3"
+                    Background="Transparent"
+                    Foreground="LightBlue">
+                <TextBlock Text="+"
+                           Foreground="LightBlue"
+                           FontSize="60"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Left">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="-12" Y="-12"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="MVVN\View\" />
+    <Folder Include="MVVN\Model\" />
+    <Folder Include="MVVN\ViewModel\" />
+    <Folder Include="Theme\" />
+    <Folder Include="Fonts\" />
+  </ItemGroup>
+
+</Project>
